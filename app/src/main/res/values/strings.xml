@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DisableInput</string>
+    <string name="onInterrupt_tip">服务被打断</string>
+    <string name="onUnbind_tip">服务终止</string>
+    <string name="enable_immerse"></string>
+    <string name="disable_immerse">关闭沉浸</string>
+    <string name="text_main">1：请在无障碍服务中的已下载应用中，针对沉浸助手打开无障碍服务\n2：建议打开“沉浸助手”快捷方式，方便快捷操作\n3：鉴于通话时屏蔽所有输入事件是较低频率行为，所以建议每次使用完之后，关闭第二条中打开的快捷方式，否则快捷方式常驻桌面影响日常使用</string>
+    <string name="please_enable_accessibility_service">1：请在无障碍服务中的已下载应用中，针对沉浸助手打开无障碍服务\n2：建议打开“沉浸助手”快捷方式，方便快捷操作\n3：鉴于通话时屏蔽所有输入事件是较低频率行为，所以建议每次使用完之后，关闭第二条中打开的快捷方式，否则快捷方式常驻桌面影响日常使用</string>
+    <string name="enable_accessibility_service">去开启无障碍服务</string>
+</resources>
