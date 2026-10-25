@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <color name="floating_control_background">#0A1F1F1F</color>
+    <color name="floating_control_text">#66808080</color>
+    <color name="floating_control_background_visible">#801F1F1F</color>
+    <color name="floating_control_text_visible">#FFE0E0E0</color>
 </resources>

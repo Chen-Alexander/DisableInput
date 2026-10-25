@@ -12,6 +12,7 @@ import android.view.WindowManager
 import android.view.WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
 import android.view.WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
 import android.view.WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
+import android.view.WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH
 import android.view.WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
 import android.view.WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY
 import android.view.WindowManager.LayoutParams.WRAP_CONTENT
@@ -60,7 +61,7 @@ class DisableInputAccessibilityService : AccessibilityService() {
             }
             format = PixelFormat.TRANSLUCENT
             flags = FLAG_LAYOUT_NO_LIMITS or
-                    FLAG_LAYOUT_IN_SCREEN
+                    FLAG_LAYOUT_IN_SCREEN or FLAG_WATCH_OUTSIDE_TOUCH
             width = WRAP_CONTENT
             height = WRAP_CONTENT
             gravity = Gravity.START or Gravity.CENTER_VERTICAL
@@ -83,6 +84,7 @@ class DisableInputAccessibilityService : AccessibilityService() {
         val binding = floatingBinding ?: return
         val layoutParams = binding.root.layoutParams as WindowManager.LayoutParams
         layoutParams.flags = FLAG_LAYOUT_NO_LIMITS or FLAG_LAYOUT_IN_SCREEN or
+                FLAG_WATCH_OUTSIDE_TOUCH or
                 if (disableInput) 0 else FLAG_NOT_FOCUSABLE
         windowManager.updateViewLayout(binding.root, layoutParams)
         binding.btnToggle.setText(

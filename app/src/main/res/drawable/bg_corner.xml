@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <solid android:color="#FFFFFF" />
-
-    <corners android:radius="7dp" />
-
-</shape>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape>
+            <solid android:color="@color/floating_control_background_visible" />
+            <corners android:radius="7dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/floating_control_background" />
+            <corners android:radius="7dp" />
+        </shape>
+    </item>
+</selector>

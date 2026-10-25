@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.disableinput.FloatingControlLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/exit"
-        android:textColor="@color/black"
+        android:textColor="@color/floating_control_text_state"
         android:includeFontPadding="false"
         android:background="@drawable/bg_corner"
         android:paddingHorizontal="12dp"
@@ -28,7 +28,7 @@
         android:checked="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
+        android:textColor="@color/floating_control_text_state"
         android:text="@string/disable_immerse"
         android:includeFontPadding="false"
         android:background="@drawable/bg_corner"
@@ -38,4 +38,4 @@
         app:layout_constraintTop_toBottomOf="@id/btnExit"
         android:layout_marginTop="32dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</com.example.disableinput.FloatingControlLayout>
