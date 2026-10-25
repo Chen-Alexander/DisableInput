@@ -4,16 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.AppCompatToggleButton
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnExit"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:textColor="@color/black"
+        android:includeFontPadding="false"
+        android:background="@drawable/bg_corner"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btnToggle"
         android:checked="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textOn="@string/disable_immerse"
-        android:textOff="@string/enable_immerse"
+        android:textColor="@color/black"
+        android:text="@string/disable_immerse"
+        android:includeFontPadding="false"
+        android:background="@drawable/bg_corner"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/btnExit"
+        android:layout_marginTop="32dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
